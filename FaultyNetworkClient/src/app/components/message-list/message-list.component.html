@@ -6,8 +6,9 @@
     <div [class]="msg.isReceivedMessage ? 'received' : 'sent'"
     style="margin: 5px">
       <mat-card>
-        <p>{{msg.message}}</p>
+        <p class="angular-with-newlines">{{msg.message}}</p>
       </mat-card>
     </div>
   </div>
+  <div style="width: 100%; float: right; height: 150px"></div>
 </div>

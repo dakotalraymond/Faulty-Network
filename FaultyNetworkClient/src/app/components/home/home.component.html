@@ -1,0 +1,11 @@
+<div class="container" #scrollMe style="overflow: scroll; height: xyz;">
+  <mat-card *ngIf="!chatService.isInitialized">
+    <app-settings></app-settings>
+  </mat-card>
+  <app-message-list></app-message-list>
+  <mat-card class="bottom-input" *ngIf="chatService.isInitialized">
+    <app-input></app-input>
+  </mat-card>
+  <div class="padder">
+  </div>
+</div>

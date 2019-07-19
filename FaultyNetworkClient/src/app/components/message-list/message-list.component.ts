@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild, ElementRef, AfterViewChecked } from '@angular/core';
 import { ChatService } from '../../providers/chat.service';
 import { Subscription } from 'rxjs';
 import { Message } from '../../models/message.model';
@@ -12,7 +12,7 @@ export class MessageListComponent implements OnInit, OnDestroy {
   messages: Message[] = [];
   messageSubscription: Subscription;
   constructor(private chatService: ChatService) {
-
+    // EMPTY
   }
 
   ngOnInit() {
